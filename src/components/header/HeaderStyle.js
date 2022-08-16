@@ -41,4 +41,6 @@ export const HeaderDiv2 = styled.div`
 
 export const CartImg = styled.img`
   margin-right: 26px;
+  &::after{
+  }
 `
