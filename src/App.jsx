@@ -1,9 +1,9 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { createGlobalStyle } from 'styled-components';
 import Homepage from './pages/Homepage/Homepage';
 import Login from './pages/Login/Login';
 import Join from './pages/Join/Join';
-import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 
 const GlobalStyle = createGlobalStyle`
@@ -15,6 +15,8 @@ const GlobalStyle = createGlobalStyle`
 
   button{
     cursor : pointer;
+    margin: 0;
+    padding: 0;
     border : none;
     background-color: transparent;
   }
@@ -24,6 +26,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 function App() {
+  const [loading, setLoading] = useState(true);
   return (
     <>
       <GlobalStyle/>

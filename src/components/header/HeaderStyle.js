@@ -1,4 +1,7 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import iconCart from '../../assets/icon-shopping-cart.svg';
+import iconUser from '../../assets/icon-user.svg';
 
 export const NavHeader = styled.header`
   display: flex;
@@ -39,6 +42,43 @@ export const HeaderDiv2 = styled.div`
   align-items: center;
 `
 
-export const CartImg = styled.img`
+export const CartTxt = styled.button`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-right: 26px;
+  font-size: 12px;
+  width: 46px;
+  text-align: center;
+  &::before {
+  content: '';
+  display: block;
+  background-image: url(${iconCart});
+  background-repeat: no-repeat;
+  background-size: 32px;
+  background-position: center;
+  padding: 2px 0;
+  width: 32px;
+  height: 32px;
+  }
+`
+
+export const LoginTxt = styled(Link)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  width: 46px;
+  text-align: center;
+&::before {
+  content: '';
+  display: block;
+  background-image: url(${iconUser});
+  background-repeat: no-repeat;
+  background-size: 32px;
+  background-position: center;
+  padding: 2px 0;
+  width: 32px;
+  height: 32px;
+  }
 `
