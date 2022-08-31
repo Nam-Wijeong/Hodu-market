@@ -4,6 +4,8 @@ import iconCart from '../../assets/icon-shopping-cart.svg';
 import iconUser from '../../assets/icon-user.svg';
 
 export const NavHeader = styled.header`
+  /* max-width: 1920px; */
+  /* min-width: 390px; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -49,7 +51,7 @@ export const CartTxt = styled.button`
   margin-right: 26px;
   font-size: 12px;
   width: 46px;
-  text-align: center;
+  color: #767676;
   &::before {
   content: '';
   display: block;
@@ -69,7 +71,7 @@ export const LoginTxt = styled(Link)`
   align-items: center;
   font-size: 12px;
   width: 46px;
-  text-align: center;
+  color: #767676;
 &::before {
   content: '';
   display: block;

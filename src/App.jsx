@@ -5,6 +5,7 @@ import Homepage from './pages/Homepage/Homepage';
 import Login from './pages/Login/Login';
 import Join from './pages/Join/Join';
 import reset from 'styled-reset';
+import ProductDetail from './pages/ProductDetail/ProductDetail';
 
 const GlobalStyle = createGlobalStyle`
   ${reset};
@@ -35,6 +36,7 @@ function App() {
           <Route path='/' element={<Homepage/>}/>
           <Route path='/login' element={<Login/>} />
           <Route path='/join' element={<Join/>}/>
+          <Route path='/productDetail' element={<ProductDetail/>}/>
         </Routes>
       </BrowserRouter>
     </>
