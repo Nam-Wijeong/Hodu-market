@@ -4,8 +4,6 @@ import iconCart from '../../assets/icon-shopping-cart.svg';
 import iconUser from '../../assets/icon-user.svg';
 
 export const NavHeader = styled.header`
-  /* max-width: 1920px; */
-  /* min-width: 390px; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -59,18 +57,18 @@ export const CartTxt = styled.button`
   background-repeat: no-repeat;
   background-size: 32px;
   background-position: center;
-  padding: 2px 0;
+  padding: 4px 0;
   width: 32px;
   height: 32px;
   }
 `
 
 export const LoginTxt = styled(Link)`
+  width: 46px;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 12px;
-  width: 46px;
   color: #767676;
 &::before {
   content: '';
@@ -79,7 +77,7 @@ export const LoginTxt = styled(Link)`
   background-repeat: no-repeat;
   background-size: 32px;
   background-position: center;
-  padding: 2px 0;
+  padding: 4px 0;
   width: 32px;
   height: 32px;
   }

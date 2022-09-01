@@ -1,5 +1,5 @@
 import React from 'react';
-import imgLogo from '../../assets/Logo-hodu.png';
+import imgLogo from '../../assets/Logo-hodu.svg';
 import iconSearch from '../../assets/icon-search.svg';
 import { NavHeader, HeaderDiv1, LogoImg, SearchInp, SearchBtn, HeaderDiv2, CartTxt, LoginTxt} from './HeaderStyle';
 

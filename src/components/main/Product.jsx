@@ -2,7 +2,6 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import ProductDetail from '../../pages/ProductDetail/ProductDetail';
 
 const url = 'https://openmarket.weniv.co.kr/';
 
@@ -25,12 +24,15 @@ export default function Product() {
       {loading ? <strong>Loading...</strong> : 
         <ProductUl>
             {Array.from(products).map((product) => 
+            <Link to={`productDetail/${product.product_id}`} key={product.product_id}>
               <ProductList key={product.product_id}>
                 <ProductImg src={product.image}/>
                 <ProductName>{product.product_name}</ProductName>
                 <ProductInfo>{product.product_info}</ProductInfo>
                 <ProductPrice>{product.price} 원</ProductPrice>
-              </ProductList>)}
+              </ProductList>
+            </Link>
+            )}
         </ProductUl>}
     </>
   )

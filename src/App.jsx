@@ -36,7 +36,7 @@ function App() {
           <Route path='/' element={<Homepage/>}/>
           <Route path='/login' element={<Login/>} />
           <Route path='/join' element={<Join/>}/>
-          <Route path='/productDetail' element={<ProductDetail/>}/>
+          <Route path='/productDetail/:id' element={<ProductDetail/>}/>
         </Routes>
       </BrowserRouter>
     </>
